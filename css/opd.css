@@ -1,4 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+
 body{
     background-color: #0C1F2D;
-    color:white;
+    color:white; 
+    font-family: 'Sarabun', sans-serif;
+}
+
+.navbar {
+    padding: 15px;
+    background-color: #07263B;
+    font-size: 18px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    
+}
+
+.nav-text {
+    margin-bottom: 0;
+}
+
+.title-fill {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+textarea {
+    background: #486178;
+    border-radius: 8px;
+    opacity: 1;
+    border-color: transparent;
+    width: 100%;
+    top: 162px;
+    left: 104px;
+    width: 600px;
+    height: 85px;
+    margin-left: 65px;
+    font-size: 65px;
 }
