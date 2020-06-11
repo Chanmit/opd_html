@@ -10,11 +10,20 @@ body{
     margin:auto;    
 }
 .d-menu{
-    background:white ;opacity:0.1;
+    background:black ;opacity:0.1;
     border-radius: 10px;
     min-height: 400px !important;
+    padding: 15px;
 }
 .menu-item{
     opacity: 1.0 !important;
-    color:black;
+    color:white;
+}
+.pcm-icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background: white;
+    margin:auto;
+    padding:15px;
 }
