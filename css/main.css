@@ -1,0 +1,20 @@
+body{
+    color:white;
+    background:#0A657F ;
+    background: linear-gradient(to bottom, #0A657F 0%, #043D74 100%) no-repeat center center fixed;
+}
+.d-center{
+    width:100%;
+    /* max-width:400px; */
+    padding:15px;
+    margin:auto;    
+}
+.d-menu{
+    background:white ;opacity:0.1;
+    border-radius: 10px;
+    min-height: 400px !important;
+}
+.menu-item{
+    opacity: 1.0 !important;
+    color:black;
+}
