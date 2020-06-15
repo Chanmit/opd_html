@@ -18,15 +18,15 @@
         var isChrome = !!window.chrome && !!window.chrome.webstore;
         var ua = navigator.userAgent.toLowerCase(); 
         $('body').addClass('bg-svg')
-        // if (ua.indexOf('safari') != -1) { 
-        //     if (ua.indexOf('chrome')  > -1) {
-        //         $('body').addClass('bg-gradient') // Chrome
-        //     } else {
-        //         $('body').addClass('bg-svg') // Safari
-        //     }
-        // }else{
-        //     $('body').addClass('bg-gradient')
-        // }
+        if (ua.indexOf('safari') != -1) { 
+            if (ua.indexOf('chrome')  > -1) {
+                $('body').addClass('bg-gradient') // Chrome
+            } else {
+                $('body').addClass('bg-svg') // Safari
+            }
+        }else{
+            $('body').addClass('bg-gradient')
+        }
         
         
         
