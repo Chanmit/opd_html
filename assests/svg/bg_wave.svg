@@ -1,0 +1,41 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+    <defs>
+        <linearGradient id="ps_gradient" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="100%" stop-color="#003087"/>
+        </linearGradient>
+        <style>
+            .pathps {
+                fill:white;
+                opacity: 0.2;
+            }
+            .waveTop {
+                animation: move-wave 3s;
+                -webkit-animation: move-wave 3s;
+                -webkit-animation-delay: 1s;
+                animation-delay: 1s;
+            }
+            .waveBottom {
+                animation: move_wave 30s linear infinite;
+            }
+            .waveMiddle {
+                animation: move_wave 20s linear infinite;
+            }
+            @keyframes move_wave {
+                0% {
+                    transform: translateX(0) translateZ(0) scaleX(2) scaleY(1)
+                }
+                50% {
+                    transform: translateX(-50%) translateZ(0) scaleX(2) scaleY(0.98)
+                }
+                100% {
+                    transform: translateX(-100%) translateZ(0) scaleX(2) scaleY(1)
+                }
+            }
+        </style>
+    </defs>
+    <rect fill="url(#ps_gradient)" x="0" y="0" width="800" height="600"/>
+    <path class="waveTop pathps" d="M0,560.41s24.14-.89,54.83,6.79,52.28,14.28,92.06,12.84S278,564.08,351.21,564,463,582.65,564.66,581c59.61-1,123.86-9.89,149.05-14.6S800,558.53,800,558.53V600H0Z" />
+    <path class="waveBottom pathps" d="M0,560.41s24.14-.89,54.83,6.79,52.28,14.28,92.06,12.84S278,564.08,351.21,564,463,582.65,564.66,581c59.61-1,123.86-9.89,149.05-14.6S800,558.53,800,558.53V600H0Z" />
+    <path class="waveMiddle pathps" d="M0,568s24.14-1.35,54.83,10.33,52.28,21.71,92.06,19.52S278,573.59,351.21,573.43,463,601.84,564.66,599.27c59.61-1.51,123.86-15,149.05-22.2S800,565.16,800,565.16V600H0Z" />
+</svg>
