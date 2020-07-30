@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;700&display=swap");
+
+@media (max-width: 800px) {
+  .navbar {
+    font-size: 14px;
+  }
+
+  .stepper {
+      font-size: x-small;
+      padding-left: 0px;
+  }
+}
+
+body {
+  font-family: "Sarabun", sans-serif;
+}
+
+.navbar {
+  background-color: #06202e;
+  color: #fff !important;
+  text-decoration: none !important;
+  height: 50px;
+  box-shadow: #000000;
+}
+
+.narbar-brand {
+  font-weight: bold;
+}
+
+.navbar-nav {
+  float: right;
+}
+
+.staff-pic {
+  color: gainsboro;
+}
+
+.ward-patient {
+  background-color: #06202e;
+  color: #fff;
+  padding: 0.2rem;
+}
+
+.ward-info {
+  border: 1px solid;
+  border-radius: 0.25rem;
+  width: min-content;
+  padding: 0.5rem;
+}
+
+div > p {
+  margin-right: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.circle {
+  text-align: center;
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+
+}
+
+.stepper {
+  list-style: none;
+  font-size: smaller;
+  line-height: 2rem;
+}
+
+.stepper li {
+}
+
+#main-form {
+}
+
+.form-choice {
+    width: 100px;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    font-size: smaller;
+}
