@@ -1,55 +1,184 @@
-@import url("https://fonts.googleapis.com/css2?family=Sarabun&display=swap");
+* {
+    box-sizing: border-box;
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;700&display=swap");
+  
+  @media (max-width: 800px) {
+    .navbar {
+      font-size: 14px;
+    }
+  
+    .stepper {
+        font-size: x-small;
+        padding-left: 0px;
+    }
+  }
+  
+  body {
+    font-family: "Sarabun", sans-serif;
+    background-color: #000000;
+    color: #C2C2C2;
+  }
+  
+  .navbar {
+    background-color: #06202e;
+    color: #fff !important;
+    text-decoration: none !important;
+    height: 50px;
+    box-shadow: #000000;
+  }
+  
+  .narbar-brand {
+    font-weight: bold;
+  }
+  
+  .navbar-nav {
+    float: right;
+  }
+  
+  
+.staff-pic {
+    color: gainsboro;
+  }
 
-body {
-  background-color: #000000;
-  color: #C2C2C2;
-  font-family: "Sarabun", sans-serif;
+  .menu-info {
+    /* border: 1px solid; */
+    border-radius: 0.25rem;
+    width: 140px;
+    height: 100px;
+    padding: 1rem;
+   font-size: 14px;
+    background: transparent linear-gradient(180deg, #122631 0%, #184259 100%) 0% 0% 
+    no-repeat padding-box;
+    box-shadow: 0px 3px 20px #424242; 
+    
+  }
+.menu-info:hover {
+    transform: scale(1.1);
+    color: #fff;
 }
+ .menu-info:active{
+    background: #2a3bd1;
+     color: #fff;
+ } 
 
-.navbar-pcm {
-  /* background-color: #06202E; */
-  background: transparent linear-gradient(180deg, #03121a  0%, #06202E 40%, #06202E 100%) 0%
+ a {
+      text-decoration: none !important;
+      color: inherit;
+  }
+ 
+    
+
+  .hr-new {
+    border: 1px solid #4D4D4D;
+    margin-top: 2rem;
+  }
+
+.dropdown-toggle {
+      background-color: #06202E;
+      color: #686E71;
+  }
+
+  .dropdown-toggle:hover {
+      color: inherit;
+  }
+
+  .dropdown-menu {
+    background-color: #06202E;
+  }
+
+  .dropdown-item {
+    color: #fff;
+  }
+
+  .dropdown-item:hover {
+    background-color: #3147FF;
+    color: #fff;
+  }
+
+  .dropdown-item:active {
+    background-color: #2a3bd1;
+    color: #fff;
+  }
+
+  .data-info {
+    border: 1px solid #374C5F;
+    border-radius: 0.25rem;
+    width: 187px;
+    height: 100px;
+    padding: 0.5rem;
+    background: #06202E
+  }
+
+  .data-num {
+      font-size: 42px;
+      color: #3147FF;
+  }
+
+  .data-info-big {
+    border: 1px solid #374C5F;
+    border-radius: 0.25rem;
+    width: 388px;
+    height: 160px;
+    padding: 1rem;
+    background: #06202E
+  }
+
+  .data-info-big > .row  {
+    color: #9e9e9e;
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  .row > span {
+      color: #3147FF;
+  }
+
+  .navbar-pcm {
+    /* background-color: #06202E; */
+    background: transparent linear-gradient(180deg, #03121a  0%, #06202E 40%, #06202E 100%) 0%
+      0% no-repeat padding-box;
+  }
+  /* change the brand and text color */
+  .navbar-pcm .navbar-brand,
+  .navbar-pcm .navbar-text{
+    color: #C2C2C2;
+  }
+  .navbar-pcm .navbar-toggler-icon{
+    color: #C2C2C2 !important;
+  }
+  /* change the link color */
+  .navbar-pcm .navbar-nav .nav-link {
+    color: #C2C2C2;
+  }
+  /* change the color of active or hovered links */
+  .navbar-pcm .nav-item.active .nav-link,
+  .navbar-pcm .nav-item:hover .nav-link {
+    color: #ffffff;
+  }
+  .navbar-pcm .nav-item.active {
+  border-bottom: 2px solid #3147FF;
+  }
+  .btn-pcm{
+    color:#E1E1E1;
+    background: transparent linear-gradient(180deg, #3147FF  0%, #1A3388 100%) 0%
     0% no-repeat padding-box;
-}
-/* change the brand and text color */
-.navbar-pcm .navbar-brand,
-.navbar-pcm .navbar-text{
-  color: #C2C2C2;
-}
-.navbar-pcm .navbar-toggler-icon{
-  color: #C2C2C2 !important;
-}
-/* change the link color */
-.navbar-pcm .navbar-nav .nav-link {
-  color: #C2C2C2;
-}
-/* change the color of active or hovered links */
-.navbar-pcm .nav-item.active .nav-link,
-.navbar-pcm .nav-item:hover .nav-link {
-  color: #ffffff;
-}
-.navbar-pcm .nav-item.active {
-border-bottom: 2px solid #3147FF;
-}
-.btn-pcm{
-  color:#E1E1E1;
-  background: transparent linear-gradient(180deg, #3147FF  0%, #1A3388 100%) 0%
-  0% no-repeat padding-box;
-}
-.btn-pcm2{
-  color:#E1E1E1;
-  background: transparent linear-gradient(180deg, #686E71  0%, #1E1E1E 100%) 0%
-  0% no-repeat padding-box;
-}
-.panel-pcm{
-  background:#06202E;
-  border-radius: 1vh;
-  padding: 1vh;
-  margin: 0.4vh;
-}
-.panel-active{
-  border:2px solid #3147FF;
-}
-.panel-normal{
-  border:2px solid #686E71;
-}
+  }
+  .btn-pcm2{
+    color:#E1E1E1;
+    background: transparent linear-gradient(180deg, #686E71  0%, #1E1E1E 100%) 0%
+    0% no-repeat padding-box;
+  }
+  .panel-pcm{
+    background:#06202E;
+    border-radius: 1vh;
+    padding: 1vh;
+    margin: 0.4vh;
+  }
+  .panel-active{
+    border:2px solid #3147FF;
+  }
+  .panel-normal{
+    border:2px solid #686E71;
+  }

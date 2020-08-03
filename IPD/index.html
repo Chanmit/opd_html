@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/ipd.css">
+
+
+    <script src="../js/jquery-3.5.1.min.js"></script>
+
+    <title>IPD</title>
+
+</head>
+
+<body>
+    <!-- nav-->
+    <nav class=" shadow d-flex navbar navbar-expand-lg navbar-expand-md navbar-dark navbar-text">
+        <a class="navbar-brand p-2" href="#">
+            <img src="/assests/iPD.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+            <span class="px-2">Smart IPD</span>
+        </a>
+        <ul class="navbar-nav p-2 ">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">IPD Ward</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Round Schedule</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Doctor Order</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Nurse Schedule</a>
+            </li>
+            <li class="nav-item">
+
+            </li>
+        </ul>
+        <a class="staff-pic nav-link d-flex align-items-center ml-auto p-2 " href="#">
+            <img src="/assests/ic_person_outline_48px (1).svg" width="20" height="20"
+                class="d-inline-block align-center" alt="" loading="lazy">
+            <span class="px-2">Staff Benz</span>
+        </a>
+    </nav>
+    <!-- end of nav-->
+    <!-- patient info-->
+    <section class="ward-patient">
+        <div class="container d-flex">
+            <div class="ward-card pt-2">
+                <div class="ward-info text-center">
+                    COLONOSCOPY WARD
+                </div>
+            </div>
+            <div class="patient-info text-left pl-3 py-2">
+                <h5>นายพัฒนพงษ์ รุ่งโรจน์เจริญ</h5>
+                <div class="row pl-3">
+                    <p id="hn">HN: 25714/51</p>
+                    <p id="an">AN: 25714/63</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of patient info-->
+    <main id="form-ipd">
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col-md-3" id="index-bar">
+                    <!-- Vertical Steppers -->
+                    <div class="row mt-1">
+                        <div class="col-md-12">
+
+                            <!-- Stepers Wrapper -->
+                            <ul class="stepper stepper-vertical">
+
+                                <!-- First Step -->
+                                <li class="completed">
+                                    <a href="#!">
+                                        <span class="circle">1</span>
+                                        <span class="label">ข้อมูลผู้ป่วย</span>
+                                    </a>
+                                </li>
+
+                                <!-- Second Step -->
+                                <li class="active">
+
+                                    <!--Section Title -->
+                                    <a href="#!">
+                                        <span class="circle">2</span>
+                                        <span class="label">การประเมินเบื้องต้น</span>
+                                    </a>
+
+                                    <!-- Section Description -->
+                                    <div class="step-content grey lighten-3">
+
+                                    </div>
+                                </li>
+
+                                <!-- Third Step -->
+                                <li class="warning">
+                                    <a href="#!">
+                                        <span class="circle">3</i></span>
+                                        <span class="label">การประเมินความปวด </span>
+                                    </a>
+                                </li>
+
+                                <!-- Fourth Step -->
+                                <li>
+                                    <a href="#!">
+                                        <span class="circle">4</span>
+                                        <span class="label">การให้การพยาบาลและ
+                                            การบันทึกพยาบาล</span>
+                                    </a>
+                                </li>
+                                <!-- Fifth Step -->
+                                <li>
+                                    <a href="#!">
+                                        <span class="circle">5</span>
+                                        <span class="label">การให้สุขศึกษา</span>
+                                    </a>
+                                </li>
+                                <!-- sixth Step -->
+                                <li>
+                                    <a href="#!">
+                                        <span class="circle">6</span>
+                                        <span class="label">สถานะการจำหน่ายและส่งต่อ</span>
+                                    </a>
+                                </li>
+
+                                <!-- Sixth Step -->
+                                <li>
+                                    <a href="#!">
+                                        <span class="circle">7</span>
+                                        <span class="label">ฟอร์มปรอท </span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <!-- /.Stepers Wrapper -->
+
+                        </div>
+                    </div>
+
+
+                    <!-- /.Vertical Steppers -->
+
+                </div>
+                <div class="col-md-9 mt-2" id="main-form">
+                    <div class="card shadow">
+                        <div class="card-body m-3">
+                            <h6><strong>ข้อมูลทั่วไปผู้ป่วย</strong></h6>
+                            <hr>
+                            <p>โรคประจำตัว</p>
+                            <button type="button" class="btn btn-outline-primary form-choice">ไม่ระบุ</button>
+                            <button type="button" class="btn btn-outline-primary form-choice">ไม่มี</button>
+                            <button type="button" class="btn btn-outline-primary form-choice">มี ระบุ</button>
+                            <p>ยาที่ใช้ประจำ</p>
+                            <button type="button" class="btn btn-outline-primary form-choice">ไม่ระบุ</button>
+                            <button type="button" class="btn btn-outline-primary form-choice">ไม่มี</button>
+                            <button type="button" class="btn btn-outline-primary form-choice">มี ระบุ</button>
+                            <p>ประวัติการแพ้ยา/อาหาร</p>
+                            <button type="button" class="btn btn-outline-primary form-choice">ไม่ระบุ</button>
+                            <button type="button" class="btn btn-outline-primary form-choice">ไม่มี</button>
+                            <button type="button" class="btn btn-outline-primary form-choice">มี ระบุ</button>
+                            <p>ประวัติการเจ็บป่วยในครอบครัว</p>
+                            <button type="button" class="btn btn-outline-primary form-choice">ไม่ระบุ</button>
+                            <button type="button" class="btn btn-outline-primary form-choice">ไม่มี</button>
+                            <button type="button" class="btn btn-outline-primary form-choice">มี ระบุ</button>
+                            <p>ประวัติอดีต</p>
+                            <button type="button" class="btn btn-outline-primary form-choice">ไม่ระบุ</button>
+                            <button type="button" class="btn btn-outline-primary form-choice">ไม่มี</button>
+                            <button type="button" class="btn btn-outline-primary form-choice">มี ระบุ</button>
+                            <hr>
+                            <p>ประจำเดือน</p>
+                            <button type="button" class="btn btn-outline-primary form-choice">ไม่ระบุ</button>
+                            <button type="button" class="btn btn-outline-primary form-choice">ไม่มี</button>
+                            <button type="button" class="btn btn-outline-primary form-choice">มี ระบุ</button>
+                            <p>การสูบบุหรี่</p>
+                            <button type="button" class="btn btn-outline-primary form-choice">ไม่ระบุ</button>
+                            <button type="button" class="btn btn-outline-primary form-choice">ไม่มี</button>
+                            <button type="button" class="btn btn-outline-primary form-choice">มี ระบุ</button>
+                            <p>เครื่องแอลกอฮอล์</p>
+                            <button type="button" class="btn btn-outline-primary form-choice">ไม่ระบุ</button>
+                            <button type="button" class="btn btn-outline-primary form-choice">ไม่มี</button>
+                            <button type="button" class="btn btn-outline-primary form-choice">มี ระบุ</button>
+                            <p>สภาวะอารมณ์ทางจิตใจ</p>
+                            <button type="button" class="btn btn-outline-primary form-choice">ไม่ระบุ</button>
+                            <button type="button" class="btn btn-outline-primary form-choice">ไม่มี</button>
+                            <button type="button" class="btn btn-outline-primary form-choice">มี ระบุ</button>
+                            <p>ประเมินด้านสังคมเศรษฐกิจ</p>
+                            <button type="button" class="btn btn-outline-primary form-choice">ไม่ระบุ</button>
+                            <button type="button" class="btn btn-outline-primary form-choice">ไม่มี</button>
+                            <button type="button" class="btn btn-outline-primary form-choice">มี ระบุ</button>
+                            <hr>
+                            <!--button-->
+                            <div class="container">
+                                <div class="row mt-1">
+                                    <div class="col-md-12 text-center">
+                                        <button type="button" class="btn btn-flat btn-sm">ยกเลิก</button>
+                                        <button type="button" class="btn btn-secondary btn-sm">บันทึก</button>
+                                        <button type="button" class="btn btn-primary btn-sm">ต่อไป</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Steppers Navigation -->
+
+
+    </main>
+<footer>test</footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

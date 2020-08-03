@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/aoc.css">
+
+
+    <script src="../js/jquery-3.5.1.min.js"></script>
+
+    <title>AOC</title>
+
+</head>
+
+<body>
+    <!-- nav-->
+    <nav class=" shadow d-flex navbar navbar-expand-lg navbar-expand-md navbar-dark navbar-text">
+        <a class="navbar-brand p-2" href="#">
+            <img src="/assests/iPD.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+            <span class="px-2">AOC</span>
+        </a>
+        <ul class="navbar-nav p-2 ">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">IPD Ward</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Round Schedule</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Doctor Order</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Nurse Schedule</a>
+            </li>
+            <li class="nav-item">
+
+            </li>
+        </ul>
+        <a class="staff-pic nav-link d-flex align-items-center ml-auto p-2 " href="#">
+            <img src="/assests/ic_person_outline_48px (1).svg" width="20" height="20"
+                class="d-inline-block align-center" alt="" loading="lazy">
+            <span class="px-2">Staff Benz</span>
+        </a>
+    </nav>
+    <!-- end of nav-->
+    <div class="selection row header context-header" style="color:white">
+
+        <div class="col-2">
+            
+            <span class="ambu-name "><span class="value">-</span></span>
+
+        </div>
+
+        <div class="col-3">
+            <span class="head">Patient : </span>
+            <span class="patient-name "><span class="value">-</span></span>
+
+            <span class="head">CID : </span>
+            <span class="patient-cid "><span class="value">-</span></span>
+
+            <span class="head">HN : </span>
+            <span class="patient-hn "><span class="value">-</span></span>
+            <span class="head">Age : </span>
+            <span class="patient-age "><span class="value">-</span></span>
+            <span class="head">Sex : </span>
+            <span class="patient-gender "><span class="value">-</span></span>
+
+        </div>
+
+        <div class="col-6">
+
+
+
+            <span class="head">Contact : </span>
+            <span class="patient-contact"><span class="value">-</span></span>
+
+
+            <span class="head">Indication : </span>
+            <span class="patient-indication "><span class="value">-</span></span>
+
+            <span class="head">Note : </span>
+            <span class="patient-note "><span class="value">-<span></span>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="row " style="color:white">
+
+        <div class="col-8">
+
+            <div class="row context-panel" style="height:24vh;border:0px solid #ccc;font-size:1.2em">
+                <div class="col-4 station" id="panel-a">
+                    <div class="row">
+                        <div class="col-6  ph pr">
+                            <span class="label">PR</span>
+                            <div class="value">-</div>
+                        </div>
+                        <div class="col-6 ph  bp">
+                            <span class="label">BP</span>
+                            <div class="value">-</div>
+                        </div>
+
+                        <div class="col-6  ph temp">
+                            <span class="label">Temp</span>
+                            <div class="value">-</div>
+                        </div>
+                        <div class="col-6  ph rr">
+                            <span class="label">RR</span>
+                            <div class="value">-</div>
+                        </div>
+
+                        <div class="col-6 ph spo2">
+                            <span class="label">SpO2</span>
+                            <div class="value">-</div>
+                        </div>
+
+                        <div class="col-6 ph hr">
+                            <span class="label">HR</span>
+                            <div class="value">-</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-4" id="panel-b">
+
+                    <style>
+                        .wave {
+                            /*min-height:3em;*/
+                            height: 4.8vh;
+                            /*background:#111;
+                            border:1px solid #333;*/
+                            background: #111;
+                            border: 1px solid #686E71;
+                        }
+                    </style>
+
+
+                    <div id="wave-1" class="wave col-lg-12  order-1" style="">
+
+                    </div>
+
+                    <div id="wave-2" class="wave col-lg-12  order-1" style="">
+
+                    </div>
+
+                    <div id="wave-3" class="wave col-lg-12  order-1" style="">
+
+                    </div>
+
+                    <div id="wave-4" class="wave col-lg-12  order-1" style="">
+
+                    </div>
+
+                    <div id="wave-5" class="wave col-lg-12  order-1" style="">
+
+                    </div>
+
+
+                </div>
+                <div class="col-4" id="panel-c">
+                    <div style="width:100%;height:24vh;overflow:hidden;font-size:0.5em">
+                        <iframe id="frame" style="margin-left:-20px;margin-top:-20px;width:115%;height:300px"></iframe>
+                    </div>
+                    <script>
+                        $(window).load(function () {
+                            $('iframe').load(function () {
+
+                            });
+                            $('#loading').show();
+                             $('iframe').attr( "src", "https://103.76.181.125:8080/808gps/open/player/video.html?lang=en&devIdno=819112150&account=admin&password=admin");
+
+                        });
+                    </script>
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 header">
+                    <center>
+
+
+
+                    </center>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+
+
+                    <div id="panel-ambulance" class="row" style="border:0px solid blue;background:#111;color:#fff;">
+
+                        <div class="col-12" style="">
+                            <div class="row hidden">
+                                <div class="col-1">
+                                    Ambulance
+                                </div>
+
+                                <div class="col-5">
+                                    Patient
+                                </div>
+                                <div class="col-2">
+                                    Conference
+                                </div>
+
+                                <div class="col-4">
+                                    Monitor
+                                </div>
+
+                            </div>
+                        </div>
+
+                        >
+                        <div id="ambu-<%=i.id%>" class="col-12  ambu-row <%=(patient)?"panel-admit":""%>
+                            <style ="margin-top:5px;height:120px;font-size:0.8em;padding:0px;padding-right:15px;">
+                            <style>
+                                span.head {
+                                    color: #bbb;
+                                }
+                            </style>
+                            <div class="station-<%=station_id%> row ">
+                                <div class="col-1 eselect-<%=i.id%>" style="font-size:0.9em">
+                                    <center>
+                                        <br />
+                                        <a href="tel:<%=i.phone%>">phone</a>
+
+
+                                    </center>
+                                    <br />
+                                </div>
+                                <div class="col-5">
+                                    <div class="row" style="">
+
+
+                                        <div class="col-4"><span class="head">Patient:</span><span
+                                                class="patient-name value">
+                                                patient.last_name</span>
+                                            <span class="head">CID:</span> <span
+                                                class="patient-cid value"></span><br />
+                                            <span class="head">HN:</span> <span class="patient-hn value"></span>
+                                            <span class="head">Age:</span> <span
+                                                class="patient-age value"></span>
+                                            <span class="head">Sex:</span> <span
+                                                class="patient-gender value"></span><br />
+                                            <span class="head">Contact:</span> <span
+                                                class="patient-contact value"></span>
+                                        </div>
+                                        <div class="col-4">
+                                            <span class="head">Indication:</span> <span
+                                                class="patient-inditcation value">
+                                                <%=admit.note%></span>
+                                        </div>
+                                        <div class="col-4">
+                                            <span class="head">Note:</span> <span class="patient-note value"></span>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <span class="head">Head to:</span> <span class="ambu-headto value">-</span>
+                                        </div>
+                                        <div class="col-6">
+                                            <span class="head">Location:</span> <span
+                                                class="ambu-address value">-</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <span class="head">Est:</span> <span class="ambu-est value">- mins</span>
+                                        </div>
+                                        <div class="col-4">
+                                            <span class="head">Speed:</span> <span class="ambu-speed value">-
+                                                km/h</span>
+                                        </div>
+                                        <div class="col-4">
+                                            <span class="head">Duration:</span> <span class="ambu-start value">-
+                                                mins</span>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-1">
+
+                                  
+                                    <a style="width:60px;padding:5px" href="../Admit/show?id=<%=admit.id%>"
+                                        class="btn btn-warning">Flow</a><br />
+                                  
+                                    <a style="width:60px;padding:5px" href="" id="call-<%=i.id%>"
+                                        class="btn btn-pcm">Call</a><br />
+
+                                    <a style="width:60px;padding:5px" target="_blank"
+                                        href='https://static.vidyo.io/latest/connector/VidyoConnector.html?host=<%=host%>&autoJoin=1&resourceId=<%=resource_id%>&displayName=<%=display_name%>&token=<%=@token%>'
+                                        class="btn btn-pcm2">Share</a>
+
+                                    <script>
+
+                                    </script>
+
+
+                                </div>
+                                <div class="col-5 station" style="font-size:0.8em">
+
+
+                                    <div class="row">
+
+
+                                        <div class="col-6 col-lg-2 col-sm-3 pr">
+                                            <span class="label">PR</span>
+                                            <div class="value">-</div>
+                                        </div>
+                                        <div class="col-6 col-lg-2 col-sm-3  bp">
+                                            <span class="label">BP</span>
+                                            <div class="value">-</div>
+                                        </div>
+
+                                        <div class="col-6 col-lg-2 col-sm-3  temp">
+                                            <span class="label">Temp</span>
+                                            <div class="value">-</div>
+                                        </div>
+                                        <div class="col-6 col-lg-2 col-sm-3  rr">
+                                            <span class="label">RR</span>
+                                            <div class="value">-</div>
+                                        </div>
+
+                                        <div class="col-6 col-lg-2 col-sm-3  spo2">
+                                            <span class="label">SpO2</span>
+                                            <div class="value">-</div>
+                                        </div>
+
+                                        <div class="col-6 col-lg-2 col-sm-3  hr">
+                                            <span class="label">HR</span>
+                                            <div class="value">-</div>
+                                        </div>
+
+
+
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div id="wave-<%=station_id%>" class="col-lg-12  order-1"
+                                            style="min-height:5em;background:#111">
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+                        </div>
+                     
+
+
+
+                    </div>
+
+
+                    <div id="panel" class="row" style="border:0px solid blue;background:#111;color:#fff;">
+
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="col-4">
+
+            <div class="conference">
+               
+            </div>
+
+            <div class="map">
+               
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="font-size:0.8em;color:#999">
+
+        <div style="float:right" class="timer">
+            00:00
+        </div>
+        E.S.M.Solution Co.,Ltd. and Aliance
+    </div>
+
+    <br />
+    <a href="tel:+66865443352">0865443352</a>
+  
+
+    <i style="color:#666">
+        <div id="msgs" style="font-size:0.8em"></div>
+    </i>
+
+
+    <footer>test</footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
