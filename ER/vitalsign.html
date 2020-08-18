@@ -9,6 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/er.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assests/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/13a3acd719.js" crossorigin="anonymous"></script>
     <title>Vital Sign Check</title>
 </head>
@@ -33,6 +35,7 @@
                         <span class="col p-0 " id="HN">HN: 58749-61</span>
                         <span class="col p-0 mr-3" id="age">อายุ: 57 ปี</span>
                         <span class="col p-0" id="gender">เพศ: ชาย</span>
+                        <span class="col p-0" id="complaint">Complaint: Chest Pain</span>
                     </div>
                     <div class="col text-right">
                         <h6 class="" id="arrival-time">Arrival:
@@ -41,17 +44,77 @@
                         <span id="duration">Duration:
                             <span>00:35 HR</span>
                         </span>
+                        <br>
+                        <span id="lastvisit--">Last Visit:
+                            <span>09:59 AM</span>
+                        </span>
                     </div>
                 </div>
             </div>
             <!--end of patient card-->
+            <div class="human">
+                <h4 class="font-weight-bold mt-4 mb-4">Patient Data</h4>
+                <div class="row  mb-2">
+                    <div class="col p-0 d-flex flex-column" id="patient-vital-sign">
+                        <div class="col-sm mb-2">
+                            <a href="#" class="btn vital-card text-left">
+                                <p>Blood Pressure</p>
+                                <img src="/assests/bp.svg" alt="blood-pressure" style="width: 15%;" />
+                             
 
-
-
+                            </a>
+                        </div>
+                        <div class="col-sm mb-2">
+                            <a href="#" class="btn vital-card text-left">
+                                <p>Pulse / SpO<sub>2</sub></p>
+                                <img src="/assests/pulse.svg" alt="pulse" />
+                            </a>
+                        </div>
+                        <div class="col-sm mb-2">
+                            <a href="#" class="btn vital-card text-left">
+                                <p>Body Temperature</p>
+                                <img src="/assests/bodytemp.svg" alt="Body Temperature" class="p-2" />
+                            </a>
+                        </div>
+                        <div class="col-sm mb-2">
+                            <a href="#" class="btn vital-card text-left">
+                                <p>Respiratory Rate</p>
+                                <img src="/assests/respirate.svg" alt="Respiratory Rate" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col p-0 d-flex flex-column" id="patient-neuro-sign">
+                        <div class="col-sm mb-2">
+                            <a href="#" class="btn vital-card text-left">
+                                <p>Eye Opening</p>
+                                <img src="/assests/eyeopen.svg" alt="Eye Opening" />
+                            </a>
+                        </div>
+                        <div class="col-sm mb-2">
+                            <a href="#" class="btn vital-card text-left">
+                                <p>Motor response</p>
+                                <img src="/assests/motor.svg" alt="Motor responseg" />
+                            </a>
+                        </div>
+                        <div class="col-sm mb-2">
+                            <a href="#" class="btn vital-card text-left">
+                                <p>Verbal Response</p>
+                                <img src="/assests/verbal.svg" alt="Verbal Response" />
+                            </a>
+                        </div>
+                        <div class="col-sm mb-2">
+                            <a href="#" class="btn vital-card text-left">
+                                <p>Pupil</p>
+                                <img src="/assests/pupil.svg" alt="Pupil" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
         <div class="d-flex justify-content-center mt-5">
-            <a href="index.html" class="btn btn-primary btn-submit d-flex align-items-center justify-content-center">
+            <a href="summary.html" class="btn btn-primary btn-submit d-flex align-items-center justify-content-center">
                 ยืนยัน
             </a>
 

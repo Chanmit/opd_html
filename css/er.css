@@ -2,10 +2,11 @@
 
 body {
   background-color: #0c1f2d;
-  color: white;
+  color: #C2C2C2;
   font-family: "Sarabun", sans-serif;
 }
 
+/* navbar for all */
 .navbar {
   padding: 15px;
   background-color: #07263b;
@@ -13,7 +14,6 @@ body {
   font-family: "Segoe UI", sans-serif;
   font-weight: 700;
 }
-
 
 
 .title-fill {
@@ -41,7 +41,7 @@ body {
   margin: 10px;
 }
 
-.num-fill {
+/* .num-fill {
   background: #486178;
   border-radius: 8px;
   opacity: 1;
@@ -50,7 +50,14 @@ body {
   height: 90px;
   font-size: 65px;
   color: white;
-  
+} */
+
+.form-control {
+  height: 90px;
+  font-size: 65px;
+  color: white;
+  background: #486178;
+  border: none;
 }
 
 .btn-dial {
@@ -60,13 +67,9 @@ body {
 }
 
 .btn-scan {
-  font-size: 25px;
-  width: 25%;
-  height: 90px;
-  box-shadow: 0px 3px 6px #000029;
+  font-size: 1.25rem;
   color: #dcdcdc;
   background-color: #054366;
-
 }
 
 .er-scan {
@@ -108,7 +111,7 @@ body {
 
 
 a {
-  color: #ffffff !important;
+  color: inherit;
 }
 
 
@@ -181,9 +184,7 @@ a {
   border-bottom: 1px solid rgba(0,0,0,.3);
 }
 
-.list-group {
-  
-}
+/* Add HN page*/
 
 .list-group-item {
   background-color: #07344b;
@@ -197,5 +198,30 @@ a {
 
 .nav-pills > .active {
   background-color: #054366 !important;
+}
 
+/* Vitail Sign Check page*/
+
+.human {
+  background: transparent url('/assests/human.svg') 0% 0% no-repeat;
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  opacity: 1;
+}
+
+#patient-vital-sign , #patient-neuro-sign {
+  opacity: 0.88;
+}
+
+/* Summary Report page*/
+.sum-report {
+  background-color: #334351;
+}
+
+.table-vital {
+  color: inherit;
+}
+
+.card-vital {
+  background-color: #283540;
 }

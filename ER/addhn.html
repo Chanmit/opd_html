@@ -9,6 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/er.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assests/favicon.ico" type="image/x-icon">
 
     <title>Add HN</title>
 </head>
@@ -26,13 +28,15 @@
         <div class="row">
             <div class="col title-fill ">
                 <p>กรอกเลข HN ของท่าน</p>
-                <div class="d-flex align-items-center">
-                    <textarea class="num-fill text-center" maxlength="7"></textarea>
-                    <button class=" btn  btn-scan ml-3 d-flex align-items-center justify-content-center">
-                        <img src="/assests/scan.svg" alt="scan" class="p-1 mr-2" />
-                        SCAN
+                <div class="input-group">
+                    <input type="text" class="form-control text-center" placeholder="" maxlength="7" aria-label="add-hn" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary btn-scan text-center" type="button" id="button-addon2" style="border: none">
+                        <img src="/assests/scan.svg" alt="scan" class="p-1" />
+                        <p class="mb-0">SCAN</p>
                     </button>
-                </div>
+                    </div>
+                  </div>
             </div>
         </div>
     </div>
@@ -45,7 +49,9 @@
                         <tr>
                             <td>
                                 <div class="number">
-                                    <div style="padding-top: 7px;">1</div>
+                                    <div style="padding-top: 7px;">
+                                    1
+                                    </div>
                                 </div>
                             </td>
                             <td>
