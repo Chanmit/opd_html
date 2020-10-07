@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/er2.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assests/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/13a3acd719.js" crossorigin="anonymous"></script>
+    <title>ER Room</title>
+</head>
+
+<body>
+    <header class=" d-flex align-items-center title-fill">
+        <div class="col d-flex align-items-center justify-content-between">
+            <h1 class="mb-0"><strong>ER</strong></h1>
+            <h1 class="">Trauma</h1>
+            <span style="float:right;text-align:right">
+                <!-- วันที่  -->
+                <span>20 September 2020</span>
+                <!--เวลา -->
+                <br />
+                <span>15:00 am</span>
+            </span>
+        </div>
+        <!--<div class="col d-flex justify-content-end">
+                        <button class=" btn  er-scan">
+                            <img src="<%=url_for('img/svg/scan.svg')%>" alt="scan" class="p-1" />
+                            Scan
+                        </button>
+                    </div>-->
+    </header>
+    <div class="row mt-4">
+        <div class="col-2 col-sm-2">
+            <div class="ml-3 d-flex flex-column text-center">
+                <div class="mr-3">
+                    <div class="card-info p-3">
+                        <h4 class="text-left">Today beds</h4>
+
+                        <span class="card-num ">9</span>
+                    </div>
+                </div>
+                <div class="mt-1 mr-3">
+                    <div class="card-info p-3">
+                        <h4 class="text-left">Avarage Duration</h4>
+
+                        <span class="card-num ">50</span>
+                    </div>
+                </div>
+                <div class="mt-1 mr-3">
+                    <div class="card-info p-3">
+                        <h4 class="text-left">Total Time</h4>
+
+                        <span class="card-num ">1:40</span>
+                    </div>
+                </div>
+                <div class="mt-1 mr-3">
+                    <div class="card-info p-3">
+                        <h4 class="text-left">ER Occupancy
+                            
+                        </h4>
+
+                        <span class="card-num ">2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-10">
+            <div class="row mb-2">
+                <div class="ml-2 text-center">
+                    <div class="board-card">
+                        <div class="board-header d-flex align-items-center justify-content-between">
+                            <h3>BED E002</h3>
+                            <span>นายวรภัทร พิพัฒน์ธนดนัย</span>
+                        </div>
+                        <div class="row ml-0 mr-0 context-panel" style="font-size:1em">
+                            <div class="col-8 station" id="panel-a">
+                                <div class="row bg-vital ">
+                                    <div class="col-6 bg-vital ph bp">
+                                        <span class="label d-flex justify-content-start ml-3">BP</span>
+                                        <div class="value p-1 font-vital">-120/80</div>
+                                    </div>
+                                    <div class="col-6 bg-vital ph pr">
+                                        <span class="label d-flex justify-content-start ml-3">PR/SpO<sub>2</sub></span>
+                                        <div class="value p-1 font-vital">-89/90</div>
+                                    </div>
+                                    
+                                    <div class="col-6 bg-vital ph temp">
+                                        <span class="label d-flex justify-content-start ml-3">Temp</span>
+                                        <div class="value p-1 font-vital">-37.5</div>
+                                    </div>
+                                    <div class="col-6 bg-vital ph rr">
+                                        <span class="label d-flex justify-content-start ml-3">RR</span>
+                                        <div class="value p-1 font-vital">-82</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 bg-vital p-1">
+                                <div class="">
+                                    <span class="label d-flex justify-content-start ml-3 p-">Score</span>
+                                    <div class="value font-score mt-3">5</div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-12 bg-vital d-flex justify-content-between">
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/eyeopen.svg" style="width:40px;height:40px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/motor.svg" style="width:30px;height:30px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/verbal.svg" style="width:40px;height:40px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/pupil.svg" style="width:30px;height:30px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                        </div>   
+                                  
+                    </div>
+                </div>
+                <div class="ml-2 text-center">
+                    <div class="board-card">
+                        <div class="board-header d-flex align-items-center justify-content-between">
+                            <h3>BED E002</h3>
+                            <span>นายวรภัทร พิพัฒน์ธนดนัย</span>
+                        </div>
+                        <div class="row ml-0 mr-0 context-panel" style="font-size:1em">
+                            <div class="col-8 station" id="panel-a">
+                                <div class="row bg-vital ">
+                                    <div class="col-6 bg-vital ph bp">
+                                        <span class="label d-flex justify-content-start ml-3">BP</span>
+                                        <div class="value p-1 font-vital">-120/80</div>
+                                    </div>
+                                    <div class="col-6 bg-vital ph pr">
+                                        <span class="label d-flex justify-content-start ml-3">PR/SpO<sub>2</sub></span>
+                                        <div class="value p-1 font-vital">-89/90</div>
+                                    </div>
+                                    
+                                    <div class="col-6 bg-vital ph temp">
+                                        <span class="label d-flex justify-content-start ml-3">Temp</span>
+                                        <div class="value p-1 font-vital">-37.5</div>
+                                    </div>
+                                    <div class="col-6 bg-vital ph rr">
+                                        <span class="label d-flex justify-content-start ml-3">RR</span>
+                                        <div class="value p-1 font-vital">-82</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 bg-vital p-1">
+                                <div class="">
+                                    <span class="label d-flex justify-content-start ml-3 p-">Score</span>
+                                    <div class="value font-score mt-3">5</div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-12 bg-vital d-flex justify-content-between">
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/eyeopen.svg" style="width:40px;height:40px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/motor.svg" style="width:30px;height:30px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/verbal.svg" style="width:40px;height:40px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/pupil.svg" style="width:30px;height:30px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                        </div>   
+                                  
+                    </div>
+                </div>
+                <div class="ml-2 text-center">
+                    <div class="board-card">
+                        <div class="board-header d-flex align-items-center justify-content-between">
+                            <h3>BED E002</h3>
+                            <span>นายวรภัทร พิพัฒน์ธนดนัย</span>
+                        </div>
+                        <div class="row ml-0 mr-0 context-panel" style="font-size:1em">
+                            <div class="col-8 station" id="panel-a">
+                                <div class="row bg-vital ">
+                                    <div class="col-6 bg-vital ph bp">
+                                        <span class="label d-flex justify-content-start ml-3">BP</span>
+                                        <div class="value p-1 font-vital">-120/80</div>
+                                    </div>
+                                    <div class="col-6 bg-vital ph pr">
+                                        <span class="label d-flex justify-content-start ml-3">PR/SpO<sub>2</sub></span>
+                                        <div class="value p-1 font-vital">-89/90</div>
+                                    </div>
+                                    
+                                    <div class="col-6 bg-vital ph temp">
+                                        <span class="label d-flex justify-content-start ml-3">Temp</span>
+                                        <div class="value p-1 font-vital">-37.5</div>
+                                    </div>
+                                    <div class="col-6 bg-vital ph rr">
+                                        <span class="label d-flex justify-content-start ml-3">RR</span>
+                                        <div class="value p-1 font-vital">-82</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 bg-vital p-1">
+                                <div class="">
+                                    <span class="label d-flex justify-content-start ml-3 p-">Score</span>
+                                    <div class="value font-score mt-3">5</div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-12 bg-vital d-flex justify-content-between">
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/eyeopen.svg" style="width:40px;height:40px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/motor.svg" style="width:30px;height:30px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/verbal.svg" style="width:40px;height:40px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/pupil.svg" style="width:30px;height:30px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                        </div>   
+                                  
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="ml-2 text-center">
+                    <div class="board-card">
+                        <div class="board-header d-flex align-items-center justify-content-between">
+                            <h3>BED E002</h3>
+                            <span>นายวรภัทร พิพัฒน์ธนดนัย</span>
+                        </div>
+                        <div class="row ml-0 mr-0 context-panel" style="font-size:1em">
+                            <div class="col-8 station" id="panel-a">
+                                <div class="row bg-vital ">
+                                    <div class="col-6 bg-vital ph bp">
+                                        <span class="label d-flex justify-content-start ml-3">BP</span>
+                                        <div class="value p-1 font-vital">-120/80</div>
+                                    </div>
+                                    <div class="col-6 bg-vital ph pr">
+                                        <span class="label d-flex justify-content-start ml-3">PR/SpO<sub>2</sub></span>
+                                        <div class="value p-1 font-vital">-89/90</div>
+                                    </div>
+                                    
+                                    <div class="col-6 bg-vital ph temp">
+                                        <span class="label d-flex justify-content-start ml-3">Temp</span>
+                                        <div class="value p-1 font-vital">-37.5</div>
+                                    </div>
+                                    <div class="col-6 bg-vital ph rr">
+                                        <span class="label d-flex justify-content-start ml-3">RR</span>
+                                        <div class="value p-1 font-vital">-82</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 bg-vital p-1">
+                                <div class="">
+                                    <span class="label d-flex justify-content-start ml-3 p-">Score</span>
+                                    <div class="value font-score mt-3">5</div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-12 bg-vital d-flex justify-content-between">
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/eyeopen.svg" style="width:40px;height:40px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/motor.svg" style="width:30px;height:30px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/verbal.svg" style="width:40px;height:40px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/pupil.svg" style="width:30px;height:30px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                        </div>   
+                                  
+                    </div>
+                </div>
+                <div class="ml-2 text-center">
+                    <div class="board-card">
+                        <div class="board-header d-flex align-items-center justify-content-between">
+                            <h3>BED E002</h3>
+                            <span>นายวรภัทร พิพัฒน์ธนดนัย</span>
+                        </div>
+                        <div class="row ml-0 mr-0 context-panel" style="font-size:1em">
+                            <div class="col-8 station" id="panel-a">
+                                <div class="row bg-vital ">
+                                    <div class="col-6 bg-vital ph bp">
+                                        <span class="label d-flex justify-content-start ml-3">BP</span>
+                                        <div class="value p-1 font-vital">-120/80</div>
+                                    </div>
+                                    <div class="col-6 bg-vital ph pr">
+                                        <span class="label d-flex justify-content-start ml-3">PR/SpO<sub>2</sub></span>
+                                        <div class="value p-1 font-vital">-89/90</div>
+                                    </div>
+                                    
+                                    <div class="col-6 bg-vital ph temp">
+                                        <span class="label d-flex justify-content-start ml-3">Temp</span>
+                                        <div class="value p-1 font-vital">-37.5</div>
+                                    </div>
+                                    <div class="col-6 bg-vital ph rr">
+                                        <span class="label d-flex justify-content-start ml-3">RR</span>
+                                        <div class="value p-1 font-vital">-82</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 bg-vital p-1">
+                                <div class="">
+                                    <span class="label d-flex justify-content-start ml-3 p-">Score</span>
+                                    <div class="value font-score mt-3">5</div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-12 bg-vital d-flex justify-content-between">
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/eyeopen.svg" style="width:40px;height:40px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/motor.svg" style="width:30px;height:30px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/verbal.svg" style="width:40px;height:40px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/pupil.svg" style="width:30px;height:30px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                        </div>   
+                                  
+                    </div>
+                </div>
+                <div class="ml-2 text-center">
+                    <div class="board-card">
+                        <div class="board-header d-flex align-items-center justify-content-between">
+                            <h3>BED E002</h3>
+                            <span>นายวรภัทร พิพัฒน์ธนดนัย</span>
+                        </div>
+                        <div class="row ml-0 mr-0 context-panel" style="font-size:1em">
+                            <div class="col-8 station" id="panel-a">
+                                <div class="row bg-vital ">
+                                    <div class="col-6 bg-vital ph bp">
+                                        <span class="label d-flex justify-content-start ml-3">BP</span>
+                                        <div class="value p-1 font-vital">-120/80</div>
+                                    </div>
+                                    <div class="col-6 bg-vital ph pr">
+                                        <span class="label d-flex justify-content-start ml-3">PR/SpO<sub>2</sub></span>
+                                        <div class="value p-1 font-vital">-89/90</div>
+                                    </div>
+                                    
+                                    <div class="col-6 bg-vital ph temp">
+                                        <span class="label d-flex justify-content-start ml-3">Temp</span>
+                                        <div class="value p-1 font-vital">-37.5</div>
+                                    </div>
+                                    <div class="col-6 bg-vital ph rr">
+                                        <span class="label d-flex justify-content-start ml-3">RR</span>
+                                        <div class="value p-1 font-vital">-82</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 bg-vital p-1">
+                                <div class="">
+                                    <span class="label d-flex justify-content-start ml-3 p-">Score</span>
+                                    <div class="value font-score mt-3">5</div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-12 bg-vital d-flex justify-content-between">
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/eyeopen.svg" style="width:40px;height:40px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/motor.svg" style="width:30px;height:30px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/verbal.svg" style="width:40px;height:40px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/pupil.svg" style="width:30px;height:30px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                        </div>   
+                                  
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="ml-2 text-center">
+                    <div class="board-card">
+                        <div class="board-header d-flex align-items-center justify-content-between">
+                            <h3>BED E002</h3>
+                            <span>นายวรภัทร พิพัฒน์ธนดนัย</span>
+                        </div>
+                        <div class="row ml-0 mr-0 context-panel" style="font-size:1em">
+                            <div class="col-8 station" id="panel-a">
+                                <div class="row bg-vital ">
+                                    <div class="col-6 bg-vital ph bp">
+                                        <span class="label d-flex justify-content-start ml-3">BP</span>
+                                        <div class="value p-1 font-vital">-120/80</div>
+                                    </div>
+                                    <div class="col-6 bg-vital ph pr">
+                                        <span class="label d-flex justify-content-start ml-3">PR/SpO<sub>2</sub></span>
+                                        <div class="value p-1 font-vital">-89/90</div>
+                                    </div>
+                                    
+                                    <div class="col-6 bg-vital ph temp">
+                                        <span class="label d-flex justify-content-start ml-3">Temp</span>
+                                        <div class="value p-1 font-vital">-37.5</div>
+                                    </div>
+                                    <div class="col-6 bg-vital ph rr">
+                                        <span class="label d-flex justify-content-start ml-3">RR</span>
+                                        <div class="value p-1 font-vital">-82</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 bg-vital p-1">
+                                <div class="">
+                                    <span class="label d-flex justify-content-start ml-3 p-">Score</span>
+                                    <div class="value font-score mt-3">5</div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-12 bg-vital d-flex justify-content-between">
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/eyeopen.svg" style="width:40px;height:40px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/motor.svg" style="width:30px;height:30px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/verbal.svg" style="width:40px;height:40px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/pupil.svg" style="width:30px;height:30px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                        </div>   
+                                  
+                    </div>
+                </div>
+                <div class="ml-2 text-center">
+                    <div class="board-card">
+                        <div class="board-header d-flex align-items-center justify-content-between">
+                            <h3>BED E002</h3>
+                            <span>นายวรภัทร พิพัฒน์ธนดนัย</span>
+                        </div>
+                        <div class="row ml-0 mr-0 context-panel" style="font-size:1em">
+                            <div class="col-8 station" id="panel-a">
+                                <div class="row bg-vital ">
+                                    <div class="col-6 bg-vital ph bp">
+                                        <span class="label d-flex justify-content-start ml-3">BP</span>
+                                        <div class="value p-1 font-vital">-120/80</div>
+                                    </div>
+                                    <div class="col-6 bg-vital ph pr">
+                                        <span class="label d-flex justify-content-start ml-3">PR/SpO<sub>2</sub></span>
+                                        <div class="value p-1 font-vital">-89/90</div>
+                                    </div>
+                                    
+                                    <div class="col-6 bg-vital ph temp">
+                                        <span class="label d-flex justify-content-start ml-3">Temp</span>
+                                        <div class="value p-1 font-vital">-37.5</div>
+                                    </div>
+                                    <div class="col-6 bg-vital ph rr">
+                                        <span class="label d-flex justify-content-start ml-3">RR</span>
+                                        <div class="value p-1 font-vital">-82</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 bg-vital p-1">
+                                <div class="">
+                                    <span class="label d-flex justify-content-start ml-3 p-">Score</span>
+                                    <div class="value font-score mt-3">5</div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-12 bg-vital d-flex justify-content-between">
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/eyeopen.svg" style="width:40px;height:40px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/motor.svg" style="width:30px;height:30px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/verbal.svg" style="width:40px;height:40px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/pupil.svg" style="width:30px;height:30px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                        </div>   
+                                  
+                    </div>
+                </div>
+                <div class="ml-2 text-center">
+                    <div class="board-card">
+                        <div class="board-header d-flex align-items-center justify-content-between">
+                            <h3>BED E002</h3>
+                            <span>นายวรภัทร พิพัฒน์ธนดนัย</span>
+                        </div>
+                        <div class="row ml-0 mr-0 context-panel" style="font-size:1em">
+                            <div class="col-8 station" id="panel-a">
+                                <div class="row bg-vital ">
+                                    <div class="col-6 bg-vital ph bp">
+                                        <span class="label d-flex justify-content-start ml-3">BP</span>
+                                        <div class="value p-1 font-vital">-120/80</div>
+                                    </div>
+                                    <div class="col-6 bg-vital ph pr">
+                                        <span class="label d-flex justify-content-start ml-3">PR/SpO<sub>2</sub></span>
+                                        <div class="value p-1 font-vital">-89/90</div>
+                                    </div>
+                                    
+                                    <div class="col-6 bg-vital ph temp">
+                                        <span class="label d-flex justify-content-start ml-3">Temp</span>
+                                        <div class="value p-1 font-vital">-37.5</div>
+                                    </div>
+                                    <div class="col-6 bg-vital ph rr">
+                                        <span class="label d-flex justify-content-start ml-3">RR</span>
+                                        <div class="value p-1 font-vital">-82</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 bg-vital p-1">
+                                <div class="">
+                                    <span class="label d-flex justify-content-start ml-3 p-">Score</span>
+                                    <div class="value font-score mt-3">5</div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-12 bg-vital d-flex justify-content-between">
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/eyeopen.svg" style="width:40px;height:40px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/motor.svg" style="width:30px;height:30px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/verbal.svg" style="width:40px;height:40px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                            <div class="eye d-flex align-items-center">
+                                <img src="/assests/pupil.svg" style="width:30px;height:30px;">
+                                <div class="value pl-3">-E1</div>
+                            </div>
+                        </div>   
+                                  
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+
+
+
+        function executeQuery() {
+            $.ajax({
+                url: '_dashboard_partial?id=<%=params[:id]%>',
+                success: function (data) {
+                    // do something with the return value here if you like
+                    $('#panel').html(data)
+                }
+            });
+            updateCall();
+        }
+
+        function updateCall() {
+            setTimeout(function () { executeQuery() }, 1000);
+        }
+
+        $(document).ready(function () {
+            executeQuery();
+
+
+
+        });
+
+    </script>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
+<!--of patients in the ER compared to # of beds-->
+<!-- <table class="w-100 h-50 ml-1 mr-1">
+    <tr class="table-style">
+        <td class="table-style m-3 bg-vital">
+            <p class="text-left">BP</p>
+            <h3 class="mb-0">120/80</h3>
+        </td>
+        <td class="table-style">
+            <span class="text-left">BP</span>
+            <h3 class="mb-0">120/80</h3>
+        </td>
+        <td class="table-style" rowspan="2">
+            <span class="text-left">BP</span>
+            <h3 class="mb-0">120/80</h3>
+        </td>
+    </tr>
+    <tr class="table-style">
+        <td class="table-style">
+            <span class="text-left">BP</span>
+            <h3 class="mb-0">120/80</h3>
+        </td>
+        <td class="table-style">
+            <span class="text-left">BP</span>
+            <h3 class="mb-0">120/80</h3>
+        </td>
+    </tr>
+</table>
+<table class="w-100 h-25">
+    <tr class="table-style">
+        <td class="table-style">
+            
+        </td>
+        
+    </tr>
+    
+</table> -->
