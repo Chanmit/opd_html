@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+   
+  }
+  
+  body {
+    font-family: 'Aunphan', sans-serif !important;
+  }
+  
+  p ,td {
+    font-family: 'Open Sans', sans-serif !important;
+  }
+  
+  
+  #brand-logo {
+     width: 100%;
+      
+    
+  }
+  #nav-style {
+      margin-top: 20px;
+      margin-bottom: 0px;
+      padding: 0;
+  }
+  
+  
+  
+  .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+    
+    .sidebar a {
+      display: block;
+      color: black;
+      padding: 16px;
+      text-decoration: none;
+    }
+     
+    .sidebar a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+    
+    .sidebar a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+  .wrapper {
+      margin-left: 0;
+  }
+  
+  .item-links {
+    max-height: max-content;
+    display: block;
+    text-decoration: none;
+     
+  }
+  
+  .nav-item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .nav-img {
+    padding-right: 10px;;
+  }
+  
+  .card {
+    border-color: #f1f1f1 !important;
+    margin-top: 30px;
+    
+  }
+  
+  
+  #all-course {
+    color: white;
+  } 
+  
+  .profile-pic {
+    padding: 20px;
+    background-color: #C8DFF1;
+  }
+  
+  #profile-website {
+    text-decoration: none !important;
+  }
+  
+  @media (max-width: 375px) {
+    #profile {
+      text-align: center;
+    }
+  }
+  
+  #footer {
+   
+     width: cover;
+     height: 40px;
+     padding: 10px;
+     background-color: rgb(54, 89, 117);
+     color: white;
+     text-align: center;
+     align-content: center;
+     font-family: 'Open Sans', sans-serif !important;
+     font-size: small;
+  } 
+  
